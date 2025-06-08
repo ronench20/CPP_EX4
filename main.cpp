@@ -46,6 +46,12 @@ int main()
         std::cout << *it << " ";
     }
     std::cout << "\n";
+    std::cout << "Order of integers:\n";
+    for (auto it = integers.begin(); it != integers.end(); ++it)
+    {
+        std::cout << *it << " ";
+    }
+    std::cout << "\n";
 
     std::cout <<"\n";
 
@@ -90,6 +96,12 @@ int main()
         std::cout << *it << " ";
     }
     std::cout << "\n";
+    std::cout << "Order of doubles:\n";
+    for (auto it = doubles.begin(); it != doubles.end(); ++it)
+    {
+        std::cout << *it << " ";
+    }
+    std::cout << "\n";
 
 
     std::cout <<"\n";
@@ -129,6 +141,12 @@ int main()
     std::cout << "\n";
     std::cout << "Reverse order of strings:\n";
     for (auto it = strings.begin_reverse_order(); it != strings.end_reverse_order(); ++it)
+    {
+        std::cout << *it << " ";
+    }
+    std::cout << "\n";
+    std::cout << "Order of strings:\n";
+    for (auto it = strings.begin(); it != strings.end(); ++it)
     {
         std::cout << *it << " ";
     }
