@@ -13,11 +13,14 @@ namespace container
     private:
         std::vector<const T*> sorted;
         int index = 0;
-        static bool getSmaller(const T* a, const T* b) {
+
+        static bool getSmaller(const T* a, const T* b)
+        {
             return *a < *b;
         }
+
     public:
-        AscendingOrder(const std::vector<T>& values, int i = 0 ) :index(i)
+        AscendingOrder(const std::vector<T>& values, int i = 0) : index(i)
         {
             for (const auto& value : values)
             {
@@ -46,9 +49,6 @@ namespace container
         {
             return index == other.index;
         }
-
-
-
     };
 }
 

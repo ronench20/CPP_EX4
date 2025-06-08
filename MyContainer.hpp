@@ -8,6 +8,7 @@
 #include <stdexcept>
 #include "AscendingOrder.hpp"
 #include "DescendingOrder.hpp"
+#include "SideCrossOrder.hpp"
 
 namespace container {
 
@@ -71,6 +72,15 @@ namespace container {
         DescendingOrder<T> end_descending_order() const
         {
             return DescendingOrder<T>(data, data.size());
+        }
+
+        SideCrossOrder<T> begin_side_cross_order () const
+        {
+            return SideCrossOrder<T>(data, 0);
+        }
+        SideCrossOrder<T> end_side_cross_order() const
+        {
+            return SideCrossOrder<T>(data, data.size());
         }
 
     };

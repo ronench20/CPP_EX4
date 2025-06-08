@@ -13,6 +13,7 @@ int main()
     integers.add(3);
     integers.add(2);
     integers.add(5);
+    integers.add(8);
 
     std::cout << "Container size: " << integers.size() << "\n";
     std::cout << "Container contents: " << integers << "\n";
@@ -28,6 +29,12 @@ int main()
     std::cout << "\n";
     std::cout << "Descending order of integers:\n";
     for (auto it = integers.begin_descending_order(); it != integers.end_descending_order(); ++it)
+    {
+        std::cout << *it << " ";
+    }
+    std::cout << "\n";
+    std::cout << "Side cross order of integers:\n";
+    for (auto it = integers.begin_side_cross_order(); it != integers.end_side_cross_order(); ++it)
     {
         std::cout << *it << " ";
     }
@@ -58,6 +65,12 @@ int main()
     std::cout << "\n";
     std::cout << "Descending order of doubles:\n";
     for (auto it = doubles.begin_descending_order(); it != doubles.end_descending_order(); ++it)
+    {
+        std::cout << *it << " ";
+    }
+    std::cout << "\n";
+    std::cout << "Side cross order of doubles:\n";
+    for (auto it = doubles.begin_side_cross_order(); it != doubles.end_side_cross_order(); ++it)
     {
         std::cout << *it << " ";
     }
