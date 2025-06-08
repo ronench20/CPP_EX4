@@ -6,6 +6,7 @@
 #include <iostream>
 #include <vector>
 #include <stdexcept>
+#include "AscendingOrder.hpp"
 
 namespace container {
 
@@ -50,6 +51,14 @@ namespace container {
                 os << value << " ";
             }
             return os;
+        }
+        AscendingOrder<T> begin_ascending_order () const
+        {
+            return AscendingOrder<T>(data, 0);
+        }
+        AscendingOrder<T> end_ascending_order() const
+        {
+            return AscendingOrder<T>(data, data.size());
         }
 
     };
