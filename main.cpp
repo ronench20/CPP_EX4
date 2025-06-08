@@ -25,6 +25,13 @@ int main()
     {
         std::cout << *it << " ";
     }
+    std::cout << "\n";
+    std::cout << "Descending order of integers:\n";
+    for (auto it = integers.begin_descending_order(); it != integers.end_descending_order(); ++it)
+    {
+        std::cout << *it << " ";
+    }
+    std::cout << "\n";
 
     std::cout <<"\n";
 
@@ -48,6 +55,13 @@ int main()
     {
         std::cout << *it << " ";
     }
+    std::cout << "\n";
+    std::cout << "Descending order of doubles:\n";
+    for (auto it = doubles.begin_descending_order(); it != doubles.end_descending_order(); ++it)
+    {
+        std::cout << *it << " ";
+    }
+    std::cout << "\n";
 
     std::cout << "\n";
 
@@ -67,6 +81,12 @@ int main()
     std::cout << "Container contents: " << strings << "\n";
     std::cout << "Ascending order of strings:\n";
     for (auto it = strings.begin_ascending_order(); it != strings.end_ascending_order(); ++it)
+    {
+        std::cout << *it << " ";
+    }
+    std::cout << "\n";
+    std::cout << "Descending order of strings:\n";
+    for (auto it = strings.begin_descending_order(); it != strings.end_descending_order(); ++it)
     {
         std::cout << *it << " ";
     }
