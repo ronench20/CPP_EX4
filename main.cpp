@@ -52,6 +52,12 @@ int main()
         std::cout << *it << " ";
     }
     std::cout << "\n";
+    std::cout << "Middle out order of integers:\n";
+    for (auto it = integers.begin_middle_out_order(); it != integers.end_middle_out_order(); ++it)
+    {
+        std::cout << *it << " ";
+    }
+    std::cout << "\n";
 
     std::cout <<"\n";
 
@@ -98,6 +104,12 @@ int main()
     std::cout << "\n";
     std::cout << "Order of doubles:\n";
     for (auto it = doubles.begin(); it != doubles.end(); ++it)
+    {
+        std::cout << *it << " ";
+    }
+    std::cout << "\n";
+    std::cout << "Middle out order of doubles:\n";
+    for (auto it = doubles.begin_middle_out_order(); it != doubles.end_middle_out_order(); ++it)
     {
         std::cout << *it << " ";
     }
@@ -151,6 +163,11 @@ int main()
         std::cout << *it << " ";
     }
     std::cout << "\n";
+    std::cout << "Middle out order of strings:\n";
+    for (auto it = strings.begin_middle_out_order(); it != strings.end_middle_out_order(); ++it)
+    {
+        std::cout << *it << " ";
+    }
 
 
     return 0;

@@ -11,6 +11,7 @@
 #include "SideCrossOrder.hpp"
 #include "ReverseOrder.hpp"
 #include "Order.hpp"
+#include "MiddleOutOrder.hpp"
 
 namespace container {
 
@@ -101,6 +102,15 @@ namespace container {
         Order<T> end_order() const
         {
             return Order<T>(data, data.size());
+        }
+
+        MiddleOutOrder<T> begin_middle_out_order () const
+        {
+            return MiddleOutOrder<T>(data, 0);
+        }
+        MiddleOutOrder<T> end_middle_out_order() const
+        {
+            return MiddleOutOrder<T>(data, data.size());
         }
 
     };
