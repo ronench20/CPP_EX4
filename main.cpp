@@ -6,6 +6,7 @@ using namespace container;
 
 int main()
 {
+    // Container for integers
     std::cout << "Container for integers:\n";
     MyContainer<> integers;
     integers.add(1);
@@ -39,9 +40,17 @@ int main()
         std::cout << *it << " ";
     }
     std::cout << "\n";
+    std::cout << "Reverse order of integers:\n";
+    for (auto it = integers.begin_reverse_order(); it != integers.end_reverse_order(); ++it)
+    {
+        std::cout << *it << " ";
+    }
+    std::cout << "\n";
 
     std::cout <<"\n";
 
+
+    // Container for doubles
     std::cout << "Container for doubles:\n";
     MyContainer<double> doubles;
     doubles.add(1.2);
@@ -75,9 +84,17 @@ int main()
         std::cout << *it << " ";
     }
     std::cout << "\n";
-
+    std::cout << "Reverse order of doubles:\n";
+    for (auto it = doubles.begin_reverse_order(); it != doubles.end_reverse_order(); ++it)
+    {
+        std::cout << *it << " ";
+    }
     std::cout << "\n";
 
+
+    std::cout <<"\n";
+
+    // Container for strings
     std::cout << "Container for strings:\n";
     MyContainer<std::string> strings;
     strings.add("my");
@@ -103,6 +120,19 @@ int main()
     {
         std::cout << *it << " ";
     }
+    std::cout << "\n";
+    std::cout << "Side cross order of strings:\n";
+    for (auto it = strings.begin_side_cross_order(); it != strings.end_side_cross_order(); ++it)
+    {
+        std::cout << *it << " ";
+    }
+    std::cout << "\n";
+    std::cout << "Reverse order of strings:\n";
+    for (auto it = strings.begin_reverse_order(); it != strings.end_reverse_order(); ++it)
+    {
+        std::cout << *it << " ";
+    }
+    std::cout << "\n";
 
 
     return 0;

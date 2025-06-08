@@ -14,7 +14,7 @@ namespace container
         std::vector<const T*> sorted;
         int index = 0;
 
-        static bool getSmaller(const T* a, const T* b)
+        static bool compare(const T* a, const T* b)
         {
             return *a < *b;
         }
@@ -26,7 +26,7 @@ namespace container
             {
                 sorted.push_back(&value);
             }
-            std::sort(sorted.begin(), sorted.end(), getSmaller);
+            std::sort(sorted.begin(), sorted.end(), compare);
         }
 
         const T& operator*() const

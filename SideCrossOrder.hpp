@@ -63,7 +63,6 @@ namespace container
         {
             return index == other.index;
         }
-
     };
 }
 

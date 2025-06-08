@@ -9,6 +9,7 @@
 #include "AscendingOrder.hpp"
 #include "DescendingOrder.hpp"
 #include "SideCrossOrder.hpp"
+#include "ReverseOrder.hpp"
 
 namespace container {
 
@@ -83,8 +84,16 @@ namespace container {
             return SideCrossOrder<T>(data, data.size());
         }
 
-    };
+        ReverseOrder<T> begin_reverse_order () const
+        {
+            return ReverseOrder<T>(data, 0);
+        }
+        ReverseOrder<T> end_reverse_order() const
+        {
+            return ReverseOrder<T>(data, data.size());
+        }
 
+    };
 
 }
 
